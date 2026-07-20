@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Card thông tin cá nhân</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <body style="background-color: rgb(241, 197, 223);">
+    <header>
+        <h1>THÔNG TIN CÁ NHÂN</h1>
+        <nav>
+            <a href="#gioithieu">GIỚI THIỆU</a> |
+            <a href="#sothich">SỞ THÍCH</a> |
+            <a href="#kynang">KỸ NĂNG</a> |
+            <a href="#thoikhoabieu">THỜI KHÓA BIỂU</a> |
+            <a href="#lienhe">LIÊN HỆ</a>
+        </nav>   
+    </header>
+    <section id="THÔNG TIN CÁ NHÂN">
+        <h2>Thông tin cá nhân</h2>
+        <img src="c:\Users\PC\Pictures\Screenshots\Ảnh chụp màn hình 2026-07-06 163758.png" alt="Ảnh đại diện" width="200" height="180"/>
+        <p><strong>Họ và tên:</strong> Trương Hải Trang</p>
+        <p><strong>Tuổi:</strong>18</p>
+        <p><strong>Trường:</strong>Đại học Công nghiệp Hà Nội</p>
+        <p><strong>Ngành:</strong>Hệ thống thông tin</p>
+        <p><strong>Lớp:</strong>HTTT02</p>
+        <p><strong>Email:</strong>truonghaitrang12@gmail.com</p>
+        <p><strong>SĐT:</strong>0123456789</p>
+    </section>
+    <hr>
+    <section>
+        <h2 id="gioithieu">Giới thiệu bản thân</h2>
+        <p>Xin chào minh là Trương Hải Trang đến từ lớp HTTT02 của HaUI</p>
+        <p>Mình yêu thích công nghệ và mong muốn được học hỏi nhiều hơn từ mọi người.Rất vui vì được làm quen với mọi người</p>
+        <p>Trong tương lai, mình mong muốn trở thành một lập trình viên chuyên nghiệp,
+            có thể tham gia vào các dự án phần mềm lớn và tạo ra những sản phẩm hữu ích
+            cho cộng đồng. Ngoài việc học, mình cũng thường xuyên rèn luyện kỹ năng mềm
+            và ngoại ngữ để chuẩn bị cho công việc sau khi tốt nghiệp.</p>
+    </section>
+    <hr>
+    <section>
+        <h2 id="sothich">Sở thích</h2>
+        <ul>
+            <li>Đọc sách</li>
+            <li>Chơi game</li>
+            <li>Đi bộ</li>
+            <li>Thích mèo</li>
+            <li>Xem phim</li>
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <h2 id="kynang">Kĩ năng</h2>
+        <ol>
+            <li>Ngoại ngữ</li>
+            <li>Giao tiếp</li>
+            <li>HTML</li>
+            <li>Python</li>
+            <li>Java</li>
+        </ol>
+    </section>
+    <hr>
+    <section>
+        <h2 id="thoikhoabieu">Thời khóa biểu</h2>
+        <table border="1">
+        <tr>
+            <th>THỨ</th>
+            <th>MÔN HỌC</th>
+            <th>PHÒNG HỌC</th>
+        </tr>
+        <tr>
+            <td>Thứ 3</td>
+            <td>CNXH</td>
+            <td>A9-202</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Thứ 4</td>
+            <td>Thể dục</td>
+            <td>Sân 2 - khu A</td>
+        </tr>
+        <tr>
+            <td>Web</td>
+            <td>A1-1304</td>
+        </tr>
+        <tr>
+            <td>Thứ 5</td>
+            <td>Toán</td>
+            <td>A1-109</td>
+        </tr>
+        <tr>
+            <td>Thứ 6</td>
+            <td>Python</td>
+            <td>A1-1304</td>
+        </tr>
+        <tr>
+            <td>Thứ 7</td>
+            <td>Toán</td>
+            <td>A1-109</td>
+        </tr>
+        </table>
+    </section>
+    <hr>
+    <section>
+        <h2 id="lienhe">Form Liên hệ</h2>
+        <form>
+            <label for="hvt">Họ và tên:</label><br />
+            <input type="text" id="hvt" name="hvt" /><br />
+            <label for="email">Email:</label><br />
+            <input type="text" id="email" name="email" /><br />
+            <label for="password">Mật khẩu:</label><br />
+            <input type="password" id="password" name="password" />
+            <p>Giới tính:<br>
+                <input type="radio" name="gioitinh" value="Nam"> Nam
+                <input type="radio" name="gioitinh" value="Nữ"> Nữ
+            </p>
+            <p>Sở thích:
+                <input type="checkbox"> Đọc sách
+                <input type="checkbox"> Nghe nhạc
+                <input type="checkbox"> Chơi thể thao
+                <input type="checkbox"> Lập trình
+            </p>
+            <p>Ngành học:
+                <select>
+                    <option>Công nghệ thông tin</option>
+                    <option>Hệ thống thông tin</option>
+                    <option>Kỹ thuật phần mềm</option>
+                    <option>Khoa học máy tính</option>
+                </select>
+            </p>
+            <p>Giới thiệu:<br>
+                <textarea rows="10" cols="30"></textarea>
+            </p>
+            <button type="button">Gửi</button>
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h2>Liên hệ</h2>
+        <p>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </p>
+        <p>
+            <a href="https://github.com" target="_blank">Github</a>
+        </p>
+        <p>
+            <a href=truonghaitrang12@gmail.com">Gmail</a>
+        </p>
+    </section>
+    <hr>
+    <footer>
+        <p align="center">
+            © 2026 - Trương Hải Trang. 
+        </p>
+    </footer>
+</body>
+</html>
