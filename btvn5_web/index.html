@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop Online</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-store"></i>
+            <span>SHOP CỦA CHENG</span>
+        </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <ul class="menu">
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Trang chủ
+                </a>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">
+                    Sản phẩm
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <!-- MENU ĐA CẤP -->
+                <ul class="submenu">
+
+                    <li>
+                        <a href="#">Thời trang</a>
+
+                        <ul class="submenu-level-2">
+                            <li><a href="#">Áo</a></li>
+                            <li><a href="#">Quần</a></li>
+                            <li><a href="#">Váy</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Giày dép</a></li>
+                    <li><a href="#">Túi xách</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Khuyến mãi</a>
+            </li>
+
+            <li>
+                <a href="#">Giới thiệu</a>
+            </li>
+
+            <li>
+                <a href="#">Liên hệ</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <!-- LAYOUT CHÍNH -->
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2>
+                <i class="fa-solid fa-list"></i>
+                Danh mục
+            </h2>
+
+            <ul class="category">
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-shirt"></i>
+                        Thời trang
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-shoe-prints"></i>
+                        Giày dép
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Túi xách
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-glasses"></i>
+                        Phụ kiện
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        Điện thoại
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="sale-box">
+                <i class="fa-solid fa-percent"></i>
+
+                <h3>SALE 50%</h3>
+
+                <p>
+                    Ưu đãi đặc biệt<br>
+                    cho thành viên
+                </p>
+
+                <button>Xem ngay</button>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <section class="banner">
+                <div>
+                    <p>ƯU ĐÃI ĐẶC BIỆT</p>
+                    <h1>SALE LÊN ĐẾN 50%</h1>
+                    <span>Khám phá những sản phẩm mới nhất</span>
+                    <br>
+                    <button>Mua ngay</button>
+                </div>
+
+                <i class="fa-solid fa-bag-shopping banner-icon"></i>
+            </section>
+
+
+            <!-- SẢN PHẨM -->
+            <section class="products">
+
+                <div class="section-title">
+                    <h2>Sản phẩm nổi bật</h2>
+                    <a href="#">Xem tất cả →</a>
+                </div>
+
+
+                <div class="product-grid">
+
+                    <!-- CARD 1 -->
+                    <article class="product-card">
+
+                        <div class="product-image">
+                            <i class="fa-solid fa-shirt"></i>
+
+                            <span class="sale">-20%</span>
+                        </div>
+
+                        <div class="product-info">
+                            <h3>Áo thun Basic</h3>
+
+                            <p class="description">
+                                Áo thun cotton mềm mại, thoải mái.
+                            </p>
+
+                            <div class="rating">
+                                ★★★★★
+                                <span>(25)</span>
+                            </div>
+
+                            <div class="price">
+                                <strong>199.000đ</strong>
+                                <del>250.000đ</del>
+                            </div>
+
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Thêm vào giỏ
+                            </button>
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 2 -->
+                    <article class="product-card">
+
+                        <div class="product-image">
+                            <i class="fa-solid fa-shoe-prints"></i>
+
+                            <span class="sale">-15%</span>
+                        </div>
+
+                        <div class="product-info">
+                            <h3>Giày Sneaker</h3>
+
+                            <p class="description">
+                                Giày sneaker trẻ trung, năng động.
+                            </p>
+
+                            <div class="rating">
+                                ★★★★★
+                                <span>(18)</span>
+                            </div>
+
+                            <div class="price">
+                                <strong>599.000đ</strong>
+                                <del>700.000đ</del>
+                            </div>
+
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Thêm vào giỏ
+                            </button>
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 3 -->
+                    <article class="product-card">
+
+                        <div class="product-image">
+                            <i class="fa-solid fa-bag-shopping"></i>
+
+                            <span class="new">NEW</span>
+                        </div>
+
+                        <div class="product-info">
+                            <h3>Túi xách nữ</h3>
+
+                            <p class="description">
+                                Túi xách thời trang, thiết kế hiện đại.
+                            </p>
+
+                            <div class="rating">
+                                ★★★★★
+                                <span>(32)</span>
+                            </div>
+
+                            <div class="price">
+                                <strong>449.000đ</strong>
+                            </div>
+
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Thêm vào giỏ
+                            </button>
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 4 -->
+                    <article class="product-card">
+
+                        <div class="product-image">
+                            <i class="fa-solid fa-glasses"></i>
+                        </div>
+
+                        <div class="product-info">
+                            <h3>Kính thời trang</h3>
+
+                            <p class="description">
+                                Kính thời trang phong cách hiện đại.
+                            </p>
+
+                            <div class="rating">
+                                ★★★★★
+                                <span>(15)</span>
+                            </div>
+
+                            <div class="price">
+                                <strong>299.000đ</strong>
+                            </div>
+
+                            <button class="add-cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Thêm vào giỏ
+                            </button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-column">
+
+            <h3>SHOP CỦA CHENG</h3>
+
+            <p>
+                Cửa hàng thời trang trực tuyến
+                chuyên cung cấp sản phẩm chất lượng.
+            </p>
+
+            <div class="social">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Liên kết</h3>
+
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Khuyến mãi</a>
+            <a href="#">Liên hệ</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Hỗ trợ</h3>
+
+            <a href="#">Chính sách đổi trả</a>
+            <a href="#">Chính sách bảo hành</a>
+            <a href="#">Câu hỏi thường gặp</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Liên hệ</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Hà Nội, Việt Nam
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                0123 456 789
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                contact@shop.com
+            </p>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Hải Trang Shop. All rights reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```

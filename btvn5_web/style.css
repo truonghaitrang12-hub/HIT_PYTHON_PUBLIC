@@ -1,0 +1,744 @@
+:root {
+    --primary: #e91e63;
+    --secondary: #ff6f91;
+    --dark: #222;
+    --text: #555;
+    --light: #f7f7f7;
+    --white: #ffffff;
+    --border: #e5e5e5;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    --radius: 10px;
+}
+
+
+/* =========================
+   RESET CSS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    min-width: 0;
+    height: 80px;
+
+    background: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    border-bottom: 1px solid var(--border);
+
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo i {
+    font-size: 28px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    background: var(--dark);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: white;
+
+    padding: 17px 25px;
+
+    transition: 0.3s;
+}
+
+.menu > li > a:hover {
+    background: var(--primary);
+}
+
+
+/* =========================
+   MENU ĐA CẤP
+========================= */
+
+.submenu {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 190px;
+
+    background: white;
+
+    box-shadow: var(--shadow);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: 0.3s;
+
+    z-index: 100;
+}
+
+
+/* Hover vào Sản phẩm */
+
+.dropdown:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* Menu cấp 1 */
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li a {
+    display: block;
+
+    padding: 13px 15px;
+
+    color: var(--dark);
+
+    border-bottom: 1px solid #eee;
+
+    transition: 0.3s;
+}
+
+.submenu li a:hover {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* Menu cấp 2 */
+
+.submenu-level-2 {
+    position: absolute;
+
+    top: 0;
+    left: 100%;
+
+    width: 170px;
+
+    background: white;
+
+    box-shadow: var(--shadow);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+}
+
+
+/* Hover vào Thời trang */
+
+.submenu li:hover > .submenu-level-2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================
+   GRID LAYOUT
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    height: fit-content;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+
+    margin-bottom: 15px;
+
+    color: var(--primary);
+}
+
+.category li {
+    border-bottom: 1px solid var(--border);
+}
+
+.category a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 5px;
+
+    color: var(--text);
+
+    transition: 0.3s;
+}
+
+.category a:hover {
+    color: var(--primary);
+
+    padding-left: 10px;
+}
+
+
+/* SALE BOX */
+
+.sale-box {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: #fff0f5;
+
+    border-radius: var(--radius);
+}
+
+.sale-box i {
+    font-size: 30px;
+
+    color: var(--primary);
+}
+
+.sale-box h3 {
+    margin: 10px 0;
+
+    color: var(--primary);
+}
+
+.sale-box p {
+    color: var(--text);
+
+    line-height: 1.5;
+}
+
+.sale-box button {
+    margin-top: 15px;
+
+    padding: 9px 18px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: var(--primary);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.sale-box button:hover {
+    transform: translateY(-2px);
+
+    background: #c2185b;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    min-width: 0;
+}
+
+
+/* BANNER */
+
+.banner {
+    min-height: 220px;
+
+    padding: 35px;
+
+    background: linear-gradient(
+        120deg,
+        #ffe0eb,
+        #fff
+    );
+
+    border-radius: var(--radius);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.banner p {
+    color: var(--primary);
+
+    font-weight: bold;
+}
+
+.banner h1 {
+    font-size: 32px;
+
+    margin: 10px 0;
+}
+
+.banner span {
+    color: var(--text);
+}
+
+.banner button {
+    margin-top: 20px;
+
+    padding: 11px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: var(--primary);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.banner button:hover {
+    transform: scale(1.05);
+
+    background: #c2185b;
+}
+
+.banner-icon {
+    font-size: 120px;
+
+    color: var(--secondary);
+
+    opacity: 0.3;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products {
+    margin-top: 30px;
+}
+
+.section-title {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 24px;
+}
+
+.section-title a {
+    color: var(--primary);
+
+    font-weight: bold;
+}
+
+
+/* CSS GRID CHO CARD */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(0, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+    background: var(--white);
+
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: 0.3s;
+}
+
+
+/* Hover card */
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-image {
+    height: 180px;
+
+    background: #f5f5f5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+.product-image i {
+    font-size: 70px;
+
+    color: #ccc;
+
+    transition: 0.3s;
+}
+
+.product-card:hover .product-image i {
+    transform: scale(1.1);
+
+    color: var(--primary);
+}
+
+
+/* SALE */
+
+.sale,
+.new {
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+    padding: 5px 8px;
+
+    border-radius: 4px;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.new {
+    background: #4caf50;
+}
+
+
+/* PRODUCT INFO */
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+.description {
+    color: var(--text);
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    height: 40px;
+}
+
+
+/* RATING */
+
+.rating {
+    margin: 10px 0;
+
+    color: #ffc107;
+
+    font-size: 14px;
+}
+
+.rating span {
+    color: #999;
+}
+
+
+/* PRICE */
+
+.price {
+    margin-bottom: 12px;
+}
+
+.price strong {
+    color: var(--primary);
+
+    font-size: 18px;
+}
+
+.price del {
+    color: #999;
+
+    font-size: 12px;
+
+    margin-left: 5px;
+}
+
+
+/* ADD CART */
+
+.add-cart {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid var(--primary);
+
+    background: white;
+
+    color: var(--primary);
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.add-cart:hover {
+    background: var(--primary);
+
+    color: white;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    max-width: 100%;
+
+    margin-top: 40px;
+
+    background: var(--dark);
+
+    color: white;
+
+    padding: 40px 8%;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 2fr)
+                           minmax(0, 1fr)
+                           minmax(0, 1fr)
+                           minmax(0, 1.5fr);
+
+    gap: 30px;
+
+    position: relative;
+}
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-column h3 {
+    color: var(--secondary);
+
+    margin-bottom: 8px;
+}
+
+.footer-column p {
+    color: #ccc;
+
+    line-height: 1.6;
+}
+
+.footer-column a {
+    color: #ccc;
+
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: var(--secondary);
+
+    padding-left: 5px;
+}
+
+
+/* SOCIAL */
+
+.social {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+.social a {
+    font-size: 22px;
+
+    color: white;
+}
+
+.social a:hover {
+    color: var(--secondary);
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #444;
+
+    color: #aaa;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        flex-wrap: wrap;
+
+        height: auto;
+
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .container {
+        grid-template-columns: 180px 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+```
